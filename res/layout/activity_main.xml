@@ -1,14 +1,78 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity" >
-
-    <TextView
-        android:layout_width="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity" 
+    >   
+    
+	<TableLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:layout_margin="30dp"
+	    android:id="@+id/homeTableLayout"
+	    >
+	    <TableRow 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:weightSum="3"
+	        >
+        <Button
+            android:id="@+id/homeQuestionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Questions"
+            android:layout_weight="1"
+            />
+		</TableRow>
+		<TableRow 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:weightSum="3"
+	        >
+        <Button
+            android:id="@+id/homeReviewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review"
+            android:layout_weight="1"  
+            />
+		</TableRow>
+		<TableRow 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:weightSum="3"
+	        >
+        <Button
+            android:id="@+id/homeForumButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forum"
+            android:layout_weight="1"
+            />
+        </TableRow>
+		<TableRow 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:weightSum="3"
+	        >
+        <Button 
+            android:id="@+id/homeSettingsButton"            
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Settings"
+            android:layout_weight="1"
+            />
+        </TableRow>
+	</TableLayout>
+	    <TextView
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
-
+        android:layout_width="wrap_content"
+        android:layout_above="@id/homeTableLayout"  
+        android:text="InterQ"
+        android:textSize="30sp"
+        android:layout_marginLeft="30dp"      
+         />
 </RelativeLayout>
