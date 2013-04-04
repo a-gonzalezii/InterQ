@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="left"
+        android:text="Review Topics:"
+        android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+			<LinearLayout 
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1.5"
+			    			    ></LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/reviewtopic1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Topic One" />
+
+                <Button
+                    android:id="@+id/reviewtopic2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Topic 2" />
+
+                <Button
+                    android:id="@+id/reviewtopic3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Topic Three" />
+
+                <Button
+                    android:id="@+id/reviewtopic4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Topic 4" />
+
+                <Button
+                    android:id="@+id/reviewtopic5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Topic 5" />
+
+                <Button
+                    android:id="@+id/reviewtopicRandom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Random" />
+            </LinearLayout>
+            <LinearLayout 
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1.5"
+			    			    >
+                
+            </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>

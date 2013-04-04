@@ -13,7 +13,7 @@ public class QuestionHomeActivity extends Activity{
 
         @Override
         public void onClick(View v) {
-            Intent i = new Intent(v.getContext(), QuestionTopicActivity.class);
+            Intent i = new Intent(v.getContext(), QuestionAskingActivity.class);
             Button b = (Button) v;
             //TODO: change this depending on how we store information for topics/archive
             String topic = (String) b.getText();

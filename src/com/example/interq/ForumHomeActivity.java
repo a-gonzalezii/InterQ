@@ -1,5 +1,15 @@
 package com.example.interq;
 
-public class ForumHomeActivity {
+import android.app.Activity;
+import android.os.Bundle;
 
+public class ForumHomeActivity extends Activity{
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.forum_home_activity);
+    }
+    
+    
 }

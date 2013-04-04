@@ -27,6 +27,21 @@
             android:label="Question Topics"
             android:screenOrientation="portrait" >
         </activity>
+        <activity 
+            android:name="com.example.interq.ReviewHomeActivity"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity 
+            android:name="com.example.interq.ForumHomeActivity"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity 
+            android:name="com.example.interq.SettingsHomeActivity"
+            android:screenOrientation="portrait"
+            >
+        </activity>
         
         
     </application>
