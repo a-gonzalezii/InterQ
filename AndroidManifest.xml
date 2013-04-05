@@ -7,7 +7,7 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
-
+	<uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -39,6 +39,16 @@
         </activity>
         <activity 
             android:name="com.example.interq.SettingsHomeActivity"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity 
+            android:name="com.example.interq.ReviewTopicActivity"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity 
+            android:name="com.example.interq.QuestionAskingActivity"
             android:screenOrientation="portrait"
             >
         </activity>

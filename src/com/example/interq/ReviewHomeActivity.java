@@ -5,9 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.app.Activity;
 
-public class ReviewHomeActivity extends Activity{
+public class ReviewHomeActivity extends ActionBarActivity{
 
 
     public class ReviewTopicListener implements OnClickListener{
@@ -18,6 +17,7 @@ public class ReviewHomeActivity extends Activity{
             Button b = (Button) v;
             //TODO: change this depending on how we store information for topics/archive
             String topic = (String) b.getText();
+            //TODO: IF TOPIC = RANDOM RANDOMLY CHOOSE NEW TOPIC
             i.putExtra("Topic", topic);
             startActivity(i);            
         }
