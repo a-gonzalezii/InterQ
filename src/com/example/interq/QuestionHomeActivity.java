@@ -33,10 +33,10 @@ public class QuestionHomeActivity extends ActionBarActivity{
 
         Button bTopic3 = (Button) findViewById(R.id.questiontopic3);
         bTopic3.setOnClickListener(new QuestionTopicListener());
-        
+        /*
         Button bTopic4 = (Button) findViewById(R.id.questiontopic4);
         bTopic4.setOnClickListener(new QuestionTopicListener());
-        
+        */
         Button bTopic5 = (Button) findViewById(R.id.questiontopic5);
         bTopic5.setOnClickListener(new QuestionTopicListener());
         

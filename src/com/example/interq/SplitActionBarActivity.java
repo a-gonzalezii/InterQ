@@ -1,13 +1,12 @@
 package com.example.interq;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-public class ActionBarActivity extends Activity {
+public class SplitActionBarActivity extends ActionBarActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,5 +51,4 @@ public class ActionBarActivity extends Activity {
 
         return true;
     }
-
 }

@@ -50,6 +50,8 @@ public class MainActivity extends Activity {
            }
         });
         
+        DatabaseHandler db = DatabaseHandler.getInstance(this);
+        db.getReadableDatabase();
     }
 
 

@@ -52,6 +52,10 @@
             android:screenOrientation="portrait"
             >
         </activity>
+        <activity
+            android:name="com.example.interq.ReviewParticularActivity"
+            android:screenOrientation="portrait">
+        </activity>
         
         
     </application>

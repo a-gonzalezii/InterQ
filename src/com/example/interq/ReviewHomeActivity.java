@@ -1,5 +1,9 @@
 package com.example.interq;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +12,8 @@ import android.widget.Button;
 
 public class ReviewHomeActivity extends ActionBarActivity{
 
+    private List<String> TOPICS;
+    private Random rand;
 
     public class ReviewTopicListener implements OnClickListener{
 
@@ -15,9 +21,10 @@ public class ReviewHomeActivity extends ActionBarActivity{
         public void onClick(View v) {
             Intent i = new Intent(v.getContext(), ReviewTopicActivity.class);
             Button b = (Button) v;
-            //TODO: change this depending on how we store information for topics/archive
             String topic = (String) b.getText();
-            //TODO: IF TOPIC = RANDOM RANDOMLY CHOOSE NEW TOPIC
+            if(topic.equals("Random")){
+                topic = TOPICS.get(rand.nextInt(TOPICS.size()));
+            }
             i.putExtra("Topic", topic);
             startActivity(i);            
         }
@@ -27,6 +34,14 @@ public class ReviewHomeActivity extends ActionBarActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.review_home_activity);
         
+        TOPICS = new ArrayList<String>();
+        rand = new Random();
+        
+        TOPICS.add("Sorting");
+        TOPICS.add("Data Structures");
+        TOPICS.add("Graph Theory");
+        TOPICS.add("Selected Topics");
+        
         Button bTopic1 = (Button) findViewById(R.id.reviewtopic1);
         bTopic1.setOnClickListener(new ReviewTopicListener());
         
@@ -35,10 +50,10 @@ public class ReviewHomeActivity extends ActionBarActivity{
 
         Button bTopic3 = (Button) findViewById(R.id.reviewtopic3);
         bTopic3.setOnClickListener(new ReviewTopicListener());
-        
+        /*
         Button bTopic4 = (Button) findViewById(R.id.reviewtopic4);
         bTopic4.setOnClickListener(new ReviewTopicListener());
-        
+        */
         Button bTopic5 = (Button) findViewById(R.id.reviewtopic5);
         bTopic5.setOnClickListener(new ReviewTopicListener());
         

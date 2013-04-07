@@ -10,56 +10,58 @@
         android:layout_margin="30dp"
         android:gravity="left"
         android:text="Question Topics:"
-        android:textSize="20sp" />
+        android:textSize="25sp" 
+        android:id="@+id/question_text_box"/>
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:orientation="horizontal"
-        android:weightSum="5" >
+        android:weightSum="5"
+        android:layout_below="@id/question_text_box" >
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1.5" >
+            android:layout_weight="1" >
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_weight="3"
             android:orientation="vertical" >
 
             <Button
                 android:id="@+id/questiontopic1"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Topic One" />
+                android:text="Sorting" />
 
             <Button
                 android:id="@+id/questiontopic2"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Topic 2" />
+                android:text="Data Structures" />
 
             <Button
                 android:id="@+id/questiontopic3"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Topic Three" />
-
+                android:text="Graph Theory" />
+<!--  
             <Button
                 android:id="@+id/questiontopic4"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Topic 4" />
-
+                android:text="Advanced Design and Analysis" />
+-->
             <Button
                 android:id="@+id/questiontopic5"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Topic 5" />
+                android:text="Selected Topic" />
 
             <Button
                 android:id="@+id/questiontopicRandom"
@@ -71,7 +73,7 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1.5" >
+            android:layout_weight="1" >
         </LinearLayout>
     </LinearLayout>
 

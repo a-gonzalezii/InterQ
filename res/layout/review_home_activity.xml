@@ -9,54 +9,58 @@
         android:layout_margin="30dp"
         android:gravity="left"
         android:text="Review Topics:"
-        android:textSize="20sp" />
+        android:textSize="25sp" 
+        android:id="@+id/review_text_box"
+        />
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:orientation="horizontal"
-            android:weightSum="5" >
+            android:weightSum="5" 
+            android:layout_below="@id/review_text_box"
+            >
 			<LinearLayout 
 			    android:layout_width="0dp"
 			    android:layout_height="wrap_content"
-			    android:layout_weight="1.5"
+			    android:layout_weight="1"
 			    			    ></LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
+                android:layout_weight="3"
                 android:orientation="vertical" >
 
                 <Button
                     android:id="@+id/reviewtopic1"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Topic One" />
+                    android:text="Sorting" />
 
                 <Button
                     android:id="@+id/reviewtopic2"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Topic 2" />
+                    android:text="Data Structures" />
 
                 <Button
                     android:id="@+id/reviewtopic3"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Topic Three" />
-
+                    android:text="Graph Theory" />
+<!-- 
                 <Button
                     android:id="@+id/reviewtopic4"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Topic 4" />
-
+                    android:text="Advanced Design and Analysis" />
+-->
                 <Button
                     android:id="@+id/reviewtopic5"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Topic 5" />
+                    android:text="Selected Topics" />
 
                 <Button
                     android:id="@+id/reviewtopicRandom"
@@ -67,7 +71,7 @@
             <LinearLayout 
 			    android:layout_width="0dp"
 			    android:layout_height="wrap_content"
-			    android:layout_weight="1.5"
+			    android:layout_weight="1"
 			    			    >
                 
             </LinearLayout>
