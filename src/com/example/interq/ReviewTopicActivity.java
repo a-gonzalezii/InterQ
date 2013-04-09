@@ -5,6 +5,7 @@ import android.app.ActionBar.LayoutParams;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -59,6 +60,8 @@ public class ReviewTopicActivity extends ActionBarActivity{
             String name = data.getString(data.getColumnIndex("name"));
         
             button.setText(name);
+            //button.setBackgroundColor(Color.parseColor("#84B88E"));
+            button.setTextColor(Color.parseColor("#3160FC"));
             button.setLayoutParams(new LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.WRAP_CONTENT));

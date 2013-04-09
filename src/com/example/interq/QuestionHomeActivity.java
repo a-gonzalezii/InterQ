@@ -16,7 +16,7 @@ public class QuestionHomeActivity extends ActionBarActivity{
             Button b = (Button) v;
             //TODO: change this depending on how we store information for topics/archive
             String topic = (String) b.getText();
-            i.putExtra("Topic", topic);
+            i.putExtra("topic", topic);
             startActivity(i);            
         }
     }

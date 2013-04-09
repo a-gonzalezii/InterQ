@@ -2,13 +2,15 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent" 
+    android:background="#E0EEFF">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:gravity="left"
+        android:textColor="#3160FC"
         android:text="Question Topics:"
         android:textSize="25sp" 
         android:id="@+id/question_text_box"/>
@@ -37,37 +39,49 @@
                 android:id="@+id/questiontopic1"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Sorting" />
+                android:text="Sorting" 
+                android:textColor="#3160FC"
+                />
 
             <Button
                 android:id="@+id/questiontopic2"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Data Structures" />
+                android:text="Data Structures"
+                android:textColor="#3160FC" 
+                />
 
             <Button
                 android:id="@+id/questiontopic3"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Graph Theory" />
+                android:text="Graph Theory"
+                android:textColor="#3160FC" 
+                />
 <!--  
             <Button
                 android:id="@+id/questiontopic4"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Advanced Design and Analysis" />
+                android:text="Advanced Design and Analysis" 
+                android:textColor="#3160FC"
+                android:background="#84B88E"/>
 -->
             <Button
                 android:id="@+id/questiontopic5"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Selected Topic" />
+                android:text="Selected Topic"
+                android:textColor="#3160FC" 
+                />
 
             <Button
                 android:id="@+id/questiontopicRandom"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Random" />
+                android:text="Random" 
+                android:textColor="#3160FC"
+                />
         </LinearLayout>
 
         <LinearLayout

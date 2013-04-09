@@ -2,13 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:background="#E0EEFF">
     
     <TextView 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/review_particular_topic"
         android:gravity="left"
+        android:textColor="#3160FC"
         android:textSize="35sp"
         />
     
@@ -18,6 +20,7 @@
         android:id="@+id/review_particular_title"
         android:gravity="left"
         android:layout_margin="10dp"
+        android:textColor="#3160FC"
         android:textSize="30sp"
         />
     
@@ -27,8 +30,41 @@
         android:id="@+id/review_particular_description"
         android:gravity="center"
         android:padding="20dp"
+        android:textColor="#3160FC"
         android:textSize="25sp"
         />
     
+    <RelativeLayout 
+        android:id="@+id/review_particular_bottom_action"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+        
+        <Button 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:layout_weight="1"
+            android:textColor="#3160FC"
+            
+            />
+        <Button 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_weight="1"
+            android:textColor="#3160FC"
+            
+            />
+        
+    </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>

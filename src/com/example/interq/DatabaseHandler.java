@@ -107,13 +107,9 @@ public class DatabaseHandler extends SQLiteOpenHelper{
         db.execSQL(REVIEW_TABLE_CREATE);
         db.execSQL(SUBTOPIC_TABLE_CREATE);
         
-        //TODO: FILL THE DBs
-        instantiateTopics(db);
-        
+        instantiateTopics(db);        
         instantiateSubtopics(db);
-        
         instantiateQuestions(db);
-        
         instantiateReview(db);
         
         
@@ -190,12 +186,6 @@ public class DatabaseHandler extends SQLiteOpenHelper{
         return data.getInt(data.getColumnIndex(SUBTOPIC_ID));
     }
   
-    
-    
-    
-    
-    
-    
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -245,18 +235,18 @@ public class DatabaseHandler extends SQLiteOpenHelper{
                 "Given a sorted array of n integers that has been rotated an unknown number of times, give an O(log n) " +
                 "algorithm that finds an element in the array. You may assume that the array was originally sorted in " +
                 "increasing order. You may also assume no duplicates\n def search(a,x) :  # (a is the array of integers," +
-                " x is the integer you want to find)","modification of binary search", null, null, "coding");
+                " x is the integer you want to find)","modification of binary search", null, "TEMP ANSWER", "coding");
 
         this.addQuestion(db, "Sorting", "Merge Arrays", "You are given two sorted arrays, A and B, and A has a large enough" +
                 " buffer at the end to hold B. Write a method to merge B into A in sorted order.\n def merge(a,b,n,m): " +
                 " #(a and b are arrays, n is the length of array b, m is the length of array a)"," Mergesort. You don’t need" +
-                        " to copy contents of a after running out of b’s. They are already in place.", "Merge Sort",null, "coding");
+                        " to copy contents of a after running out of b’s. They are already in place.", "Merge Sort","TEMP ANSWER", "coding");
 
         this.addQuestion(db, "Data Structures", "Anagrams"," Write a method to decide if two strings are anagrams or not.\n def " +
-                "anagram(s,t): # s and t are strings","Sort the strings",null, null, "coding");
+                "anagram(s,t): # s and t are strings","Sort the strings",null, "TEMP ANSWER", "coding");
 
         this.addQuestion(db,"Data Structures", "Unique Characters", "Implement an algorithm to determine if a string has all unique " +
-                "characters. Try to find one of O(n) time.\n def isUniqueChars2(string):","hint", null, null, "coding");
+                "characters. Try to find one of O(n) time.\n def isUniqueChars2(string):","hint", null, "TEMP ANSWER", "coding");
 
         this.addQuestion(db, "Graph Theory", "Binary Search Tree", "On a binary search tree, we insert a value v, by comparing" +
                 " it to the root. If v > root, we go ___.", null, "Binary Search Tree","right", "fill in");
@@ -297,9 +287,9 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 
         this.addReview(db, "Stacks","Stacks", "In a stack, the element deleted from the set is the one most recently inserted: the stack implements a last-in, first-out policy. The insert operation is often called push, and the delete operation is often called pop.");
 
-        this.addReview(db,"Queue","Queue","In a queue, the element deleted is always the one that has been in the set for the longest time; the stack implements a first-in, first-out policy. The insert operation is called enqueue, and the delete operation dequeue");
+        this.addReview(db,"Queues","Queue","In a queue, the element deleted is always the one that has been in the set for the longest time; the stack implements a first-in, first-out policy. The insert operation is called enqueue, and the delete operation dequeue");
 
-        this.addReview(db, "Linked List","Linked List","a data structure in which the objects are arranged in a linear order, where the order is determined by a pointer in each object.");
+        this.addReview(db, "Linked Lists","Linked List","a data structure in which the objects are arranged in a linear order, where the order is determined by a pointer in each object.");
 
         this.addReview(db, "Hash Tables","Simple uniform hashing","each key is equally likely to hash to any of the m slots, independently of where any other key has hashed to");
 
@@ -315,9 +305,9 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 
         this.addReview(db, "Dynamic Programming","Dynamic Programming","A dynamic programming algorithm is like a divide-and-conquer algorithm except that it solves each subsubproblem just once and then saves its answer in a table, thereby avoiding the work of recomputing the answer every time it solves each subsubproblem");
 
-        this.addReview(db, "Amortized Analysis","Amortized Analysis","In amortized analysis, we average the time require to perform a sequence of data-structure operations over all the operations performed. It guarantees the average performance of each operation in the worst case.");
+        this.addReview(db, "Amorized Analysis","Amortized Analysis","In amortized analysis, we average the time require to perform a sequence of data-structure operations over all the operations performed. It guarantees the average performance of each operation in the worst case.");
 
-        this.addReview(db,"NP-complete","NP-complete","The class NP consists of those problems that are “verifiable” in polynomial time. Meaning, if you were somehow given a “certificate” of a solution, you could verify that the certificate is correct in time polynomial in the size of the input to the problem.");
+        this.addReview(db,"NP-Complete","NP-complete","The class NP consists of those problems that are “verifiable” in polynomial time. Meaning, if you were somehow given a “certificate” of a solution, you could verify that the certificate is correct in time polynomial in the size of the input to the problem.");
 
         this.addReview(db,"Concurrency","Deadlock","In order for deadlock to occur, you must have mutual exclusion");
 
